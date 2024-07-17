@@ -6,7 +6,7 @@
     "clientVersion": "5.2.0",
     "distributionPath": "/dist/",
     "extensionsPath": "/extensions/",
-    "frontentLibrary": {
+    "frontendLibrary": {
       "buildCommand": "bun run build",
       "devCommand": "bun run dev",
       "devUrl": "http://localhost:4200",
