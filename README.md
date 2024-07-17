@@ -3,6 +3,7 @@
 Combining Neutralinojs with Vite is pain in the ass 😓
 
 Currently I'm fighting with HMR... I can't make it to work 😑
+Window is loading static frontend files, not launching vite dev server, `--url` is not passed as launch parameter.
 
 # Technologies used
 
