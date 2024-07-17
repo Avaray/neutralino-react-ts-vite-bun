@@ -12,3 +12,10 @@ Window is loading static frontend files, not launching vite dev server, `--url` 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/)
 - [BUN](https://bun.sh/)
+
+# How to run
+
+1. Install [BUN](https://bun.sh/)
+2. Clone this repository
+3. Install all dependencies with `bun run install`
+4. Run the app with `bun run dev`
