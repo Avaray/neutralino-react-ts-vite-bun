@@ -1,18 +1,16 @@
-# Yet Another Neutralinojs Starter
+# 🥱 Yet Another Neutralinojs Starter
 
-Combining Neutralino with Vite is `pain in the ass` 💩
+This is a starter project for building a desktop application using [Neutralinojs](https://neutralino.js.org/docs/), [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/), and [Vite](https://vitejs.dev/). Inspired by [this template created by JustPilz](https://github.com/JustPilz/neu-react-ts-vite-template). Created to be used with [BUN](https://bun.sh/). Supports [Hot Module Replacement](https://vitejs.dev/guide/features#hot-module-replacement). Closes App window properly without freezing.
 
-# Technologies used
-
-- [Neutralinojs](https://neutralino.js.org/)
-- [React](https://react.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Vite](https://vitejs.dev/)
-- [BUN](https://bun.sh/)
-
-# How to run
+# ⚡️ How to run
 
 1. Install [BUN](https://bun.sh/)
-2. Clone this repository
-3. Install all dependencies with `bun run install`
-4. Run the app with `bun run dev`
+2. Install [Neutralino](https://neutralino.js.org/docs/#/setup/installation) CLI globally with `bun i -g @neutralinojs/neu`
+3. Clone this repository
+4. Install all dependencies with `bun run install`
+5. Run the app in development mode with `neu run`
+6. Build the app for production with `neu build`
+
+# 📃 TODO's
+
+✖️ Add [Routing](https://reactrouter.com/en/main) with example pages
