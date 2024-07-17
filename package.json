@@ -10,6 +10,6 @@
   "scripts": {
     "install": "cd web && bun install && cd .. && neu update",
     "build": "cd web && bun run build && cd .. && neu build",
-    "dev": "neu run -- "
+    "dev": "neu run -- --url=http://localhost:3000"
   }
 }
