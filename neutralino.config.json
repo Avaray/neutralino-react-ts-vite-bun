@@ -1,0 +1,53 @@
+{
+  "applicationId": "dav.one.sdv",
+  "cli": {
+    "binaryName": "sdv",
+    "binaryVersion": "5.2.0",
+    "clientVersion": "5.2.0",
+    "distributionPath": "/dist/",
+    "extensionsPath": "/extensions/",
+    "frontentLibrary": {
+      "buildCommand": "bun run build",
+      "devCommand": "bun run dev",
+      "devUrl": "http://localhost:4200",
+      "initCommand": "bun install",
+      "patchFile": "/web/index.html",
+      "projectPath": "/web/"
+    },
+    "resourcesPath": "/web/dist/"
+  },
+  "defaultMode": "window",
+  "documentRoot": "/web/dist/",
+  "enableNativeAPI": true,
+  "enableServer": true,
+  "logging": {
+    "enabled": true,
+    "writeToLogFile": true
+  },
+  "modes": {
+    "window": {
+      "center": true,
+      "enableInspector": true,
+      "exitProcessOnClose": false,
+      "icon": "/web/public/icon.png",
+      "maximize": true,
+      "minHeight": 400,
+      "minWidth": 720,
+      "resizable": true,
+      "title": "SDV",
+      "useSavedState": false
+    }
+  },
+  "nativeAllowList": [
+    "app.*",
+    "computer.*",
+    "events.*",
+    "filesystem.*",
+    "os.*",
+    "window.*"
+  ],
+  "singlePageServe": true,
+  "tokenSecurity": "one-time",
+  "url": "/",
+  "version": "1.0.0"
+}
