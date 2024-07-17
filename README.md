@@ -1,6 +1,7 @@
-# SDV - Stable Diffusion Viewer
+# Yet Another Neutralinojs Starter
 
-A simple tool for browsing images and their prompts.
+Combining Neutralinojs with Vite is pain in the ass.
+Currently I'm fighting with code.
 
 # Technologies used
 
