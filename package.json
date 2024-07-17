@@ -1,0 +1,15 @@
+{
+  "name": "neutralino-react-vite-ts-bun",
+  "version": "1.0.0",
+  "description": "A Neutralinojs React Vite TypeScript starter with Bun",
+  "author": "Avaray",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Avaray/neutralino-react-vite-ts-bun.git"
+  },
+  "scripts": {
+    "install": "neu update && cd web && bun install && cd ..",
+    "build": "cd web && bun run build && cd .. && neu build",
+    "dev": "neu run"
+  }
+}

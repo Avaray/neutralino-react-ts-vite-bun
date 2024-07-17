@@ -1,0 +1,7 @@
+.storage
+.tmp
+*.log
+bin
+dist
+neutralino.js
+node_modules
