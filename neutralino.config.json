@@ -7,8 +7,8 @@
     "distributionPath": "/dist/",
     "extensionsPath": "/extensions/",
     "frontentLibrary": {
-      "buildCommand": "tsc -b && bunx --bun vite build",
-      "devCommand": "bunx --bun vite --host",
+      "buildCommand": "bun run build",
+      "devCommand": "bun run dev",
       "devUrl": "http://localhost:4200",
       "initCommand": "bun install",
       "patchFile": "/web/index.html",
