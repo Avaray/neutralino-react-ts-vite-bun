@@ -12,7 +12,8 @@ const neutralino = (): Plugin => {
     async transformIndexHtml(html) {
       if (config.mode === "development") {
         type AuthFileType = { nlPort: number, nlToken: string, nlConnectToken: string };
-        const { nlPort } = await Bun.file("../.tmp/auth_info.json").json() as AuthFileType;
+        const authFileContent = Bun.file("../.tmp/auth_info.json");
+        const { nlPort } = await authFileContent.json();
         return html.replace(
           "<neutralino>",
           `<script src="http://localhost:${nlPort}/__neutralino_globals.js"></script>`
