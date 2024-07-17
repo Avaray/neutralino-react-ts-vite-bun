@@ -10,6 +10,6 @@
   "scripts": {
     "install": "neu update && cd web && bun install && cd ..",
     "build": "cd web && bun run build && cd .. && neu build",
-    "dev": "neu run"
+    "dev": "neu run -- "
   }
 }
