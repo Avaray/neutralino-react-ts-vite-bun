@@ -3,7 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-import { filesystem } from "@neutralinojs/lib"
+import { app, filesystem } from "@neutralinojs/lib"
+
+const shutdownApp = () => app.exit();
 
 function App() {
   const [count, setCount] = useState(0)
@@ -36,9 +38,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <button onClick={shutdownApp}>Shutdown</button>
     </>
   )
 }
