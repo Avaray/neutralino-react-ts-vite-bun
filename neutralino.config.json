@@ -1,7 +1,7 @@
 {
-  "applicationId": "dav.one.sdv",
+  "applicationId": "neutralinojs.vite.react.ts.starter",
   "cli": {
-    "binaryName": "sdv",
+    "binaryName": "starter",
     "binaryVersion": "5.2.0",
     "clientVersion": "5.2.0",
     "distributionPath": "/dist/",
