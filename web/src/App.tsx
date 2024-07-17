@@ -1,10 +1,21 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import { filesystem } from "@neutralinojs/lib"
+
 function App() {
   const [count, setCount] = useState(0)
+
+  // Log current directory or error after component is mounted
+  useEffect(() => {
+    filesystem.readDirectory('./').then((data) => {
+      console.log(data)
+    }).catch((err) => {
+      console.log(err)
+    })
+  }, [])
 
   return (
     <>
