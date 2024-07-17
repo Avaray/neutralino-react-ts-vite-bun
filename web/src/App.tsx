@@ -7,10 +7,9 @@ import { app, filesystem } from "@neutralinojs/lib"
 
 const shutdownApp = () => app.exit();
 
-function App() {
+export default function App() {
   const [count, setCount] = useState(0)
 
-  // Log current directory or error after component is mounted
   useEffect(() => {
     filesystem.readDirectory('./').then((data) => {
       console.log(data)
@@ -34,13 +33,8 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
       </div>
       <button onClick={shutdownApp}>Shutdown</button>
     </>
   )
 }
-
-export default App
