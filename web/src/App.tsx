@@ -1,22 +1,13 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+import { app } from "@neutralinojs/lib"
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
-
-import { app, filesystem } from "@neutralinojs/lib"
 
 const shutdownApp = () => app.exit();
 
 export default function App() {
   const [count, setCount] = useState(0)
-
-  useEffect(() => {
-    filesystem.readDirectory('./').then((data) => {
-      console.log(data)
-    }).catch((err) => {
-      console.log(err)
-    })
-  }, [])
 
   return (
     <>
