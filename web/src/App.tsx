@@ -6,7 +6,6 @@ import './App.css'
 
 const shutdownApp = () => app.exit();
 
-
 export default function App() {
   const [count, setCount] = useState(0)
 
