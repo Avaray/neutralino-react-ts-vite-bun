@@ -30,9 +30,9 @@
       "enableInspector": true,
       "exitProcessOnClose": false,
       "icon": "/web/public/icon.png",
-      "maximize": true,
+      "maximize": false,
       "minHeight": 400,
-      "minWidth": 720,
+      "minWidth": 700,
       "resizable": true,
       "title": "STARTER",
       "useSavedState": false
