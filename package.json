@@ -5,7 +5,7 @@
   "author": "Avaray",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Avaray/neutralino-react-vite-ts-bun.git"
+    "url": "https://github.com/Avaray/neutralino-react-ts-vite-bun"
   },
   "scripts": {
     "install": "cd web && bun install && cd .. && neu update"
