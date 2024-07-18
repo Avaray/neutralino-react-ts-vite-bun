@@ -10,7 +10,3 @@ This is a starter project for building a desktop application using [Neutralinojs
 4. Install all dependencies with `bun run install`
 5. Run the app in development mode with `neu run`
 6. Build the app for production with `neu build`
-
-# 📃 TODO's
-
-✖️ Add [Routing](https://reactrouter.com/en/main) with example pages
