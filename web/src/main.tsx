@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 
 import './global.css'
+import 'virtual:uno.css'
 
 try { init() } catch (err) { console.warn('Neutralino.js failed to initialize.', err) }
 

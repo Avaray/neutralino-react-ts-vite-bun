@@ -1,6 +1,7 @@
 import react from '@vitejs/plugin-react-swc'
 import type { ResolvedConfig, Plugin } from 'vite'
 import { defineConfig } from 'vite'
+import UnoCSS from 'unocss/vite'
 
 const neutralino = (): Plugin => {
   let config: ResolvedConfig;
@@ -31,6 +32,7 @@ const neutralino = (): Plugin => {
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    UnoCSS(),
     react(),
     neutralino()
   ],
