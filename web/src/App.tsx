@@ -1,13 +1,16 @@
 import { useEffect, useState } from 'react'
-import { app, window as W } from "@neutralinojs/lib"
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import { window as W } from "@neutralinojs/lib"
+import { Route, Switch } from "wouter";
 
-const shutdownApp = () => app.exit();
+import Home from './pages/Home'
+import Info from './pages/Info'
+import Settings from './pages/Settings'
+import NotFound from './pages/NotFound'
+
+import Container from './components/Container'
+import Header from './components/Header'
 
 export default function App() {
-  const [count, setCount] = useState(0)
 
   // This is part of "Eye protection" feature
   // By default window is starting with white background (changing HTML background color does not help)
@@ -19,22 +22,14 @@ export default function App() {
   }, [])
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-      <button onClick={shutdownApp}>Shutdown</button>
-    </>
+    <Container>
+      <Header />
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/info" component={Info} />
+        <Route path="/settings" component={Settings} />
+        <Route component={NotFound} />
+      </Switch>
+    </Container>
   )
 }

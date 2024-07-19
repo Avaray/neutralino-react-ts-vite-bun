@@ -13,6 +13,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   </React.StrictMode>,
 )
 
-events.on('windowClose', () => app.exit());
+events.on('windowClose', () => app.exit())
 
 W.focus()
