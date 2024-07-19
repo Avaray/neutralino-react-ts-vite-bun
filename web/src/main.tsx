@@ -1,9 +1,9 @@
 import { app, events, init, window as W } from "@neutralinojs/lib"
-
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
-import './index.css'
+
+import './global.css'
 
 try { init() } catch (err) { console.warn('Neutralino.js failed to initialize.', err) }
 

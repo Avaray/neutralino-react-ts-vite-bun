@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { window as W } from "@neutralinojs/lib"
 import { Route, Switch } from "wouter";
 
@@ -7,8 +7,10 @@ import Info from './pages/Info'
 import Settings from './pages/Settings'
 import NotFound from './pages/NotFound'
 
-import Container from './components/Container'
-import Header from './components/Header'
+// import Container from './components/Container'
+import About from './pages/About';
+// import Header from './components/Header';
+import Container from './components/Container';
 
 export default function App() {
 
@@ -23,13 +25,13 @@ export default function App() {
 
   return (
     <Container>
-      <Header />
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/info" component={Info} />
         <Route path="/settings" component={Settings} />
+        <Route path="/about" component={About} />
         <Route component={NotFound} />
-      </Switch>
-    </Container>
+      </Switch >
+    </Container >
   )
 }

@@ -1,7 +1,12 @@
+import Header from "./Header";
+
 export default function Container({ children }: { children: React.ReactNode }) {
   return (
-    <div className="container">
-      {children}
-    </div>
+    <>
+      <main className="flex flex-col">
+        <Header />
+        <div className="container mx-4">{children}</div>
+      </main>
+    </>
   )
 }
