@@ -26,6 +26,7 @@
   },
   "modes": {
     "window": {
+      "borderless": false,
       "center": true,
       "enableInspector": false,
       "exitProcessOnClose": false,
