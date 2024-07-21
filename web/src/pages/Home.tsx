@@ -1,28 +1,26 @@
-import Centered from "../components/Centered"
+// import Centered from "../components/Centered"
 
-import WouterLogo from '../assets/wouter.svg'
+// import WouterLogo from '../assets/wouter.svg'
 
-type TechnologiesType = { name: string, logo: string, url: string, color?: string }
+type TechnologiesType = { name: string, logo: string, url: string, color?: boolean }
 
 const technologies = [
-  { name: 'Neutralinojs', logo: 'i-simple-icons:neutralinojs', url: 'https://neutralino.js.org/docs/', color: '#f89901' },
+  { name: 'Neutralinojs', logo: 'i-simple-icons:neutralinojs', url: 'https://neutralino.js.org/docs/', },
   { name: 'React', logo: 'i-devicon:react', url: 'https://reactjs.org/' },
-  { name: 'Wouter', logo: 'i-pajamas:severity-unknown', url: 'https://github.com/molefrog/Wouter', color: '#f89901' },
+  { name: 'Wouter', logo: 'i-wouter', url: 'https://github.com/molefrog/Wouter', color: true },
   { name: 'TypeScript', logo: 'i-logos:typescript-icon', url: 'https://www.typescriptlang.org/' },
   { name: 'TailwindCSS', logo: 'i-logos:tailwindcss-icon', url: 'https://tailwindcss.com/docs/installation' },
   { name: 'UnoCSS', logo: 'i-vscode-icons:file-type-unocss', url: 'https://unocss.dev/' },
-  { name: 'daisyUI', logo: 'i-logos:daisyui', url: 'https://daisyui.com/' },
+  { name: 'daisyUI', logo: 'i-daisyui', url: 'https://daisyui.com/' },
   { name: 'Vite', logo: 'i-logos:vitejs', url: 'https://vitejs.dev/guide/why.html' },
   { name: 'BUN', logo: 'i-logos:bun', url: 'https://bun.sh/' },
-  { name: 'Iconify', logo: WouterLogo, url: 'https://iconify.design/' },
+  { name: 'Iconify', logo: 'i-line-md:iconify2', url: 'https://iconify.design/' },
 ]
 
 const techDiv = (tech: TechnologiesType) => (
-  <div key={tech.name} className='flex flex-row items-center m-4 aspect-square rounded-2xl h-32'>
-    {/* two divs in column. first take space available, second is at bottom*/}
-    <a href={tech.url} className={`flex flex-col items-center w-full h-full rounded-2xl`}>
-      {/* need to fix that colors below */}
-      <span className={`flex-grow w-full h-full text-5xl text-white ${tech.logo} ${tech.color && `bg-primary`}`}></span>
+  <div key={tech.name} className='w-1/5 min-w-[100px] max-w-[200px] aspect-square m-2 hover:animate-fade-in'>
+    <a href={tech.url} className={`flex flex-col w-full h-full rounded-2xl`}>
+      <span className={`flex-grow w-full h-full text-5xl text-white ${tech.logo}`}></span>
       <span className='text-lg text-white self-center'>{tech.name}</span>
     </a>
   </div>
@@ -30,10 +28,11 @@ const techDiv = (tech: TechnologiesType) => (
 
 export default function Home() {
   return (
-    <Centered>
-      <div className="flex flex-row flex-wrap">
+    <>
+      {/* <div className="flex flex-row flex-wrap"> */}
+      <div className="max-w-640px flex flex-wrap justify-center items-center gap-0">
         {technologies.map(tech => techDiv(tech))}
       </div>
-    </Centered>
+    </>
   )
 }
