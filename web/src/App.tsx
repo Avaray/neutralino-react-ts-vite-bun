@@ -27,7 +27,7 @@ export default function App() {
   return (
     <div className="h-screen w-full flex flex-col overflow-hidden">
       <Header />
-      <main className='flex-grow overflow-auto'>
+      <main className='flex-grow overflow-auto self-center'>
         <div className="container mx-auto">
           <Switch>
             <Route path="/" component={Home} />
