@@ -2,12 +2,12 @@
 
 // import WouterLogo from '../assets/wouter.svg'
 
-type TechnologiesType = { name: string, logo: string, url: string, color?: boolean }
+type TechnologiesType = { name: string, logo: string, url: string, color?: string }
 
 const technologies = [
   { name: 'Neutralinojs', logo: 'i-simple-icons:neutralinojs', url: 'https://neutralino.js.org/docs/', },
   { name: 'React', logo: 'i-devicon:react', url: 'https://reactjs.org/' },
-  { name: 'Wouter', logo: 'i-wouter', url: 'https://github.com/molefrog/Wouter', color: true },
+  { name: 'Wouter', logo: 'i-wouter', url: 'https://github.com/molefrog/Wouter' },
   { name: 'TypeScript', logo: 'i-logos:typescript-icon', url: 'https://www.typescriptlang.org/' },
   { name: 'TailwindCSS', logo: 'i-logos:tailwindcss-icon', url: 'https://tailwindcss.com/docs/installation' },
   { name: 'UnoCSS', logo: 'i-vscode-icons:file-type-unocss', url: 'https://unocss.dev/' },
