@@ -19,8 +19,8 @@ const technologies = [
 
 const techDiv = (tech: TechnologiesType) => (
   <div key={tech.name} className='w-1/5 min-w-[100px] max-w-[200px] aspect-square m-2 hover:animate-fade-in'>
-    <a href={tech.url} className={`flex flex-col w-full h-full rounded-2xl`}>
-      <span className={`flex-grow w-full h-full text-5xl text-white ${tech.logo}`}></span>
+    <a href={tech.url} className={"flex flex-col w-full h-full rounded-2xl"}>
+      <span className={`flex-grow w-full h-full text-5xl text-white ${tech.logo}`} />
       <span className='text-lg text-white self-center'>{tech.name}</span>
     </a>
   </div>
