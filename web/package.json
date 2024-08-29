@@ -16,6 +16,7 @@
     "wouter": "^3.3.5"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.3",
     "@iconify/json": "^2.2.242",
     "@types/bun": "^1.1.8",
     "@types/node": "^20.16.2",
