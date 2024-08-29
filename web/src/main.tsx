@@ -8,11 +8,15 @@ import 'virtual:uno.css'
 
 try { init() } catch (err) { console.warn('Neutralino.js failed to initialize.', err) }
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+const rootElement = document.getElementById('root');
+
+if (rootElement) {
+  ReactDOM.createRoot(rootElement).render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+  );
+}
 
 events.on('windowClose', () => app.exit())
 
