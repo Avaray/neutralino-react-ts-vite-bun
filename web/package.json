@@ -10,30 +10,30 @@
     "preview": "bunx --bun vite preview"
   },
   "dependencies": {
-    "@neutralinojs/lib": "^5.2.0",
+    "@neutralinojs/lib": "^5.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "wouter": "^3.3.1"
+    "wouter": "^3.3.5"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.230",
-    "@types/bun": "^1.1.6",
-    "@types/node": "^20.14.11",
-    "@types/react": "^18.3.3",
+    "@iconify/json": "^2.2.242",
+    "@types/bun": "^1.1.8",
+    "@types/node": "^20.16.2",
+    "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/eslint-plugin": "^7.16.1",
-    "@typescript-eslint/parser": "^7.16.1",
-    "@unocss/preset-icons": "^0.61.5",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "@unocss/preset-icons": "^0.62.3",
     "@vitejs/plugin-react-swc": "^3.7.0",
-    "autoprefixer": "^10.4.19",
+    "autoprefixer": "^10.4.20",
     "daisyui": "^4.12.10",
-    "eslint": "^9.7.0",
+    "eslint": "^9.9.1",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react-refresh": "^0.4.9",
-    "postcss": "^8.4.39",
-    "tailwindcss": "^3.4.6",
-    "typescript": "^5.5.3",
-    "unocss": "^0.61.5",
-    "vite": "^5.3.4"
+    "eslint-plugin-react-refresh": "^0.4.11",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4",
+    "unocss": "^0.62.3",
+    "vite": "^5.4.2"
   }
 }
