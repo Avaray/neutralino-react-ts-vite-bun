@@ -2,6 +2,7 @@ import react from '@vitejs/plugin-react-swc';
 import UnoCSS from 'unocss/vite';
 import type { ResolvedConfig, Plugin } from 'vite';
 import { defineConfig } from 'vite';
+import unoConfig from './unocss';
 
 const neutralino = (): Plugin => {
   let config: ResolvedConfig;
@@ -27,7 +28,7 @@ const neutralino = (): Plugin => {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [UnoCSS(), react(), neutralino()],
+  plugins: [UnoCSS(unoConfig), react(), neutralino()],
   server: {
     port: 4200,
     strictPort: true,
