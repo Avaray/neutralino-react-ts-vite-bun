@@ -1,13 +1,12 @@
 // import { app, events, os, computer } from "@neutralinojs/lib";
 
+// const osInfo = await computer.getOSInfo();
+
 export default function Info() {
   return (
-    <>
-      <h1>Info</h1>
-      <div>
-        <h2>Computer</h2>
-        <p>{ }</p>
-      </div>
-    </>
+    <div className="flex flex-col items-center justify-center h-full">
+      <p className="text-lg">This is the info page</p>
+      {/* <p>OS: {osInfo.name}</p> */}
+    </div>
   )
 }

@@ -1,7 +1,7 @@
-import { app } from '@neutralinojs/lib'
+// import { app } from '@neutralinojs/lib'
 import { Link } from 'wouter'
 
-const shutdownApp = () => app.exit();
+// const shutdownApp = () => app.exit();
 
 export default function Header() {
   return (
@@ -13,7 +13,9 @@ export default function Header() {
         <Link className='btn btn-ghost' href="/">Home</Link>
         <Link className='btn btn-ghost' href="/info">Info</Link>
         <Link className='btn btn-ghost' href="/settings">Settings</Link>
-        <Link className='btn btn-secondary' href='#' onClick={shutdownApp}><span className='i-material-symbols-light:close-rounded' /></Link>
+        <Link className='btn btn-ghost' href="/about">About</Link>
+        <Link className='btn btn-ghost' href="/something">Not Found</Link>
+        {/* <Link className='btn btn-secondary' href='#' onClick={shutdownApp}><span className='i-material-symbols-light:close-rounded' /></Link> */}
       </div>
     </div>
   );

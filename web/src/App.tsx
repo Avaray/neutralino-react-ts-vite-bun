@@ -2,15 +2,13 @@ import { useEffect } from 'react'
 import { window as W } from "@neutralinojs/lib"
 import { Route, Switch } from "wouter";
 
+import './App.css'
+
 import Home from './pages/Home'
 import Info from './pages/Info'
 import Settings from './pages/Settings'
-import NotFound from './pages/NotFound'
-
-// import Container from './components/Container'
 import About from './pages/About';
-// import Header from './components/Header';
-// import Container from './components/Container';
+import NotFound from './pages/NotFound'
 import Header from './components/Header';
 
 export default function App() {
@@ -25,10 +23,10 @@ export default function App() {
   }, [])
 
   return (
-    <div className="h-screen w-full flex flex-col overflow-hidden">
+    <div className='flex flex-col h-screen'>
       <Header />
-      <main className='flex-grow overflow-auto self-center'>
-        <div className="container mx-auto">
+      <main className='flex-1 overflow-auto'>
+        <div>
           <Switch>
             <Route path="/" component={Home} />
             <Route path="/info" component={Info} />

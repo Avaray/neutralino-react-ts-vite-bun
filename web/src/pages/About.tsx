@@ -1,3 +1,7 @@
 export default function About() {
-  return <h1>About</h1>;
+  return (
+    <div className="flex flex-col items-center justify-center h-full">
+      <p className="text-lg">This is the about page</p>
+    </div>
+  )
 }

@@ -42,7 +42,7 @@
   },
   "nativeAllowList": ["app.*", "computer.*", "events.*", "filesystem.*", "os.*", "window.*"],
   "singlePageServe": true,
-  "tokenSecurity": "one-time",
+  "tokenSecurity": "none",
   "url": "/",
   "version": "1.0.0"
 }
