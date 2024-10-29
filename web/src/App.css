@@ -11,3 +11,14 @@ body {
 .btn {
   @apply no-animation;
 }
+
+.logo {
+  width: 10vw;
+  height: 10vw;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 1em rgba(135, 193, 230, 0.35));
+}
