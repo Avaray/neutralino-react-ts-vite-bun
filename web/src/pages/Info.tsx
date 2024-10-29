@@ -28,7 +28,6 @@ export default function Info() {
         </div>
       </div>
       <div className="flex-grow p-4 mr-3vw">
-        {/* i-gameicon image fit to window aspect square */}
         <svg className="i-simple-icons:neutralinojs h-full w-full op-3" />
       </div>
     </>
