@@ -5,6 +5,7 @@ export default defineConfig({
     [
       'i-wouter',
       {
+        // path to the svg file must start with / if it's in the public folder
         mask: 'url(/wouter.svg) no-repeat center / contain',
         'background-image':
           'linear-gradient(45deg, var(--gradient-from, #47C9FF), var(--gradient-to, #BD34FE))',
