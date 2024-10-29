@@ -10,7 +10,6 @@
     "preview": "bunx --bun vite preview"
   },
   "dependencies": {
-    "@iconify/utils": "^2.1.33",
     "@neutralinojs/lib": "^5.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
