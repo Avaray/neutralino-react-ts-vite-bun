@@ -21,7 +21,10 @@ const neutralino = (): Plugin => {
           `<script src="http://localhost:${nlPort}/__neutralino_globals.js"></script>`,
         );
       }
-      return html.replace('<neutralino>', '<script src="%PUBLIC_URL%/__neutralino_globals.js"></script>');
+      return html.replace(
+        '<neutralino>',
+        '<script src="%PUBLIC_URL%/__neutralino_globals.js"></script>',
+      );
     },
   };
 };
