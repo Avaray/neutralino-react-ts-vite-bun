@@ -40,7 +40,14 @@
       "useSavedState": false
     }
   },
-  "nativeAllowList": ["app.*", "computer.*", "events.*", "filesystem.*", "os.*", "window.*"],
+  "nativeAllowList": [
+    "app.*",
+    "computer.*",
+    "events.*",
+    "filesystem.*",
+    "os.*",
+    "window.*"
+  ],
   "singlePageServe": true,
   "tokenSecurity": "none",
   "url": "/",
