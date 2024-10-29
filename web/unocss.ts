@@ -5,14 +5,15 @@ export default defineConfig({
     [
       'i-wouter',
       {
-        mask: 'url(src/assets/icon_duotone_optimized.svg) no-repeat center / contain',
-        'background-image': 'linear-gradient(45deg, var(--gradient-from, #47C9FF), var(--gradient-to, #BD34FE))',
+        mask: 'url(/wouter.svg) no-repeat center / contain',
+        'background-image':
+          'linear-gradient(45deg, var(--gradient-from, #47C9FF), var(--gradient-to, #BD34FE))',
       },
     ],
     [
       'i-daisyui',
       {
-        'background-image': 'url(src/assets/daisyui.svg)',
+        'background-image': 'url(/daisyui.svg)',
         'background-size': 'contain',
         'background-repeat': 'no-repeat',
         'background-position': 'center',
