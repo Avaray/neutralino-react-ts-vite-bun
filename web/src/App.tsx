@@ -6,10 +6,9 @@ import './App.css'
 
 import Home from './pages/Home'
 import Info from './pages/Info'
-import Settings from './pages/Settings'
-import About from './pages/About';
 import NotFound from './pages/NotFound'
 import Header from './components/Header';
+import Container from './components/Main';
 
 export default function App() {
 
@@ -25,17 +24,13 @@ export default function App() {
   return (
     <div className='flex flex-col h-screen'>
       <Header />
-      <main className='flex-1 overflow-auto'>
-        <div>
-          <Switch>
-            <Route path="/" component={Home} />
-            <Route path="/info" component={Info} />
-            <Route path="/settings" component={Settings} />
-            <Route path="/about" component={About} />
-            <Route component={NotFound} />
-          </Switch >
-        </div>
-      </main>
+      <Container>
+        <Switch>
+          <Route path="/" component={Home} />
+          <Route path="/info" component={Info} />
+          <Route component={NotFound} />
+        </Switch >
+      </Container>
     </div>
   )
 }

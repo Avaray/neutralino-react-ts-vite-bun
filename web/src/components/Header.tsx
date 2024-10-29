@@ -1,21 +1,23 @@
-// import { app } from '@neutralinojs/lib'
-import { Link } from 'wouter'
-
-// const shutdownApp = () => app.exit();
+import { Link } from "wouter";
 
 export default function Header() {
   return (
     <div className="w-full navbar">
       <div className="navbar-start">
-        <Link className='btn btn-lg btn-ghost' href="/"><span className='i-simple-icons:neutralinojs' />Neutralino</Link>
+        <span className="text-4xl p-3 font-100 select-none tracking-widest uppercase">
+          Neutralino<span className="text-xl">js</span>
+        </span>
       </div>
       <div className="navbar-end gap-x-2">
-        <Link className='btn btn-ghost' href="/">Home</Link>
-        <Link className='btn btn-ghost' href="/info">Info</Link>
-        <Link className='btn btn-ghost' href="/settings">Settings</Link>
-        <Link className='btn btn-ghost' href="/about">About</Link>
-        <Link className='btn btn-ghost' href="/something">Not Found</Link>
-        {/* <Link className='btn btn-secondary' href='#' onClick={shutdownApp}><span className='i-material-symbols-light:close-rounded' /></Link> */}
+        <Link className="btn btn-lg btn-ghost" href="/">
+          Home
+        </Link>
+        <Link className="btn btn-lg btn-ghost" href="/info">
+          Info
+        </Link>
+        <Link className="btn btn-lg btn-ghost" href="/something">
+          404
+        </Link>
       </div>
     </div>
   );
