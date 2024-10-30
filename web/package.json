@@ -20,7 +20,7 @@
     "@eslint/js": "^9.13.0",
     "@iconify/json": "^2.2.265",
     "@types/bun": "^1.1.12",
-    "@types/node": "^22.8.2",
+    "@types/node": "^22.8.4",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@unocss/preset-icons": "^0.63.6",
@@ -34,7 +34,7 @@
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",
     "typescript": "^5.6.3",
-    "typescript-eslint": "^8.12.1",
+    "typescript-eslint": "^8.12.2",
     "unocss": "^0.63.6",
     "vite": "^5.4.10"
   }
