@@ -6,26 +6,36 @@
   "scripts": {
     "dev": "bunx --bun vite --host",
     "build": "tsc -b && bunx --bun vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint . --report-unused-disable-directives",
     "preview": "bunx --bun vite preview"
   },
   "dependencies": {
-    "@neutralinojs/lib": "^5.2.0",
+    "@neutralinojs/lib": "^5.4.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "wouter": "^3.3.5"
   },
   "devDependencies": {
-    "@types/bun": "^1.1.6",
-    "@types/node": "^20.14.11",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/eslint-plugin": "^7.16.1",
-    "@typescript-eslint/parser": "^7.16.1",
-    "@vitejs/plugin-react-swc": "^3.7.0",
-    "eslint": "^9.7.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react-refresh": "^0.4.8",
-    "typescript": "^5.5.3",
-    "vite": "^5.3.4"
+    "@biomejs/biome": "1.9.4",
+    "@eslint/js": "^9.13.0",
+    "@iconify/json": "^2.2.265",
+    "@types/bun": "^1.1.12",
+    "@types/node": "^22.8.4",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@unocss/preset-icons": "^0.63.6",
+    "@vitejs/plugin-react-swc": "^3.7.1",
+    "autoprefixer": "^10.4.20",
+    "daisyui": "^4.12.14",
+    "eslint": "^9.13.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc-cae764ce-20241025",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "globals": "^15.11.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.12.2",
+    "unocss": "^0.63.6",
+    "vite": "^5.4.10"
   }
 }

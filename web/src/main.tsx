@@ -1,18 +1,21 @@
 import { app, events, init, window as W } from "@neutralinojs/lib"
-
-import React from 'react'
+import { StrictMode } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
-import './index.css'
+import 'virtual:uno.css'
 
 try { init() } catch (err) { console.warn('Neutralino.js failed to initialize.', err) }
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+const rootElement = document.getElementById('root');
 
-events.on('windowClose', () => app.exit());
+if (rootElement) {
+  ReactDOM.createRoot(rootElement).render(
+    <StrictMode>
+      <App />
+    </StrictMode>,
+  )
+}
+
+events.on('windowClose', () => app.exit())
 
 W.focus()

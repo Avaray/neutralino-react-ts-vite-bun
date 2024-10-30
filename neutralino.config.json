@@ -2,8 +2,8 @@
   "applicationId": "neutralinojs.vite.react.ts.starter",
   "cli": {
     "binaryName": "starter",
-    "binaryVersion": "5.2.0",
-    "clientVersion": "5.2.0",
+    "binaryVersion": "5.4.0",
+    "clientVersion": "5.4.0",
     "distributionPath": "/dist/",
     "extensionsPath": "/extensions/",
     "frontendLibrary": {
@@ -26,8 +26,9 @@
   },
   "modes": {
     "window": {
+      "borderless": false,
       "center": true,
-      "enableInspector": false,
+      "enableInspector": true,
       "exitProcessOnClose": false,
       "hidden": true,
       "icon": "/web/public/icon.png",
@@ -48,7 +49,7 @@
     "window.*"
   ],
   "singlePageServe": true,
-  "tokenSecurity": "one-time",
+  "tokenSecurity": "none",
   "url": "/",
   "version": "1.0.0"
 }
